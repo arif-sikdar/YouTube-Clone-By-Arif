@@ -1,0 +1,159 @@
+header {
+  display: flex;
+  height: 57px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dedede;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+.icon-height {
+  height: 24px;
+}
+
+.logo {
+  height: 20px;
+  cursor: pointer;
+}
+
+.my-profile {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+header .icon-height {
+  cursor: pointer;
+}
+
+.tooltip-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -40px;
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  border-radius: 2px;
+  padding: 8px;
+  font-size: 12px;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+}
+/*
+    =Header-Left
+*/
+
+.h-left {
+  display: flex;
+  align-items: center;
+}
+
+.h-left .hamburger-menu {
+  margin: 0 24px;
+}
+
+/*
+    =Header-Middle
+*/
+.h-middle {
+  display: flex;
+  flex: 1;
+  margin-left: 60px;
+  max-width: 500px;
+}
+
+.search-bar {
+  font-size: 16px;
+  flex: 1;
+  height: 40px;
+  padding: 1px 2px 1px 12px;
+  border: 1px solid #cccccc;
+  box-shadow: inset 1px 1px 2px #eeeeee;
+  border-radius: 2px;
+  width: 0;
+  min-width: 0;
+}
+
+.search-bar::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 64px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  margin-left: -2px;
+  margin-right: 8px;
+  padding: 1px 6px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.voice-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+/*
+    =Header-Right
+*/
+
+.h-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 29px;
+  margin-right: 24px;
+  width: 182px;
+  flex-shrink: 0;
+}
+
+.notification-container {
+  position: relative;
+}
+
+.notification-no {
+  position: absolute;
+  top: -3px;
+  right: -7px;
+  background-color: #cc0000;
+  color: white;
+  border: 2px solid white;
+  font-size: 10px;
+  padding: 0 5px;
+  border-radius: 8px;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

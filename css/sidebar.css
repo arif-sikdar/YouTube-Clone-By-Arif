@@ -1,0 +1,34 @@
+/*
+    =sidebar
+*/
+
+nav {
+  width: 72px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  bottom: 0;
+  padding-top: 5px;
+  background-color: white;
+  z-index: 200;
+}
+
+nav .sidebar-box {
+  font-size: 10px;
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sidebar-box .icon-height {
+  margin-bottom: 5px;
+}
+
+.sidebar-box:hover {
+  background-color: #eeeeee;
+}
